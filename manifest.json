@@ -1,0 +1,15 @@
+{
+  "name": "Switch on Alert",
+  "version": "0.1",
+  "description": "Switch to the tab that calls alert() the way Chrome used to do",
+  "background": {
+	  "scripts": ["switchOnAlert.js"],
+	  "background": false
+  },
+  "content_scripts": [{
+	  "matches": ["<all_urls>"],
+	  "js": ["content.js"]
+  }],
+  "web_accessible_resources": ["newAlert.js"],
+  "manifest_version": 2
+}
