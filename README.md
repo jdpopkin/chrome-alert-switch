@@ -1,0 +1,1 @@
+Chrome 64 disabled the old, sometimes-annoying behavior where a tab that calls `alert` steals focus. This extension attempts to restore it by intercepting `alert` calls and switching focus to the tab that called `alert`.
